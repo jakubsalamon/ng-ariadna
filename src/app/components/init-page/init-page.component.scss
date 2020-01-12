@@ -1,0 +1,82 @@
+.init-bcg-on {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transition: 8s;
+}
+.init-bcg-off {
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transition: 8s;
+}
+.init-bcg-out {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transition: 3s;
+}
+
+.bcg-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.bcg01 {
+  background-image: url("../../../assets/img/birds.jpg");
+  background-size: cover;
+  grid-column: 1/2;
+
+
+}
+.bcg02 {
+  background-image: url("../../../assets/img/redwall.jpg");
+  grid-column: 2/3;
+
+}
+
+.logo-container {
+  position: absolute;
+  left: 120px;
+  top: 140px;
+  text-transform: uppercase;
+}
+.logo {
+  height: 90px;
+}
+.logo__text-first-init {
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+.logo__text-first {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  transition: 9s;
+}
+.logo__text-sec-init {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+.logo__text-sec {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+  transition: 9s;
+}
+.logo__text-third {
+  margin-top: 15px;
+  transition: 4s;
+}
+.logo__text-third-init {
+  margin-top: 15px;
+  color: transparent;
+  transition: 4s;
+}

@@ -1,3 +1,14 @@
-<p>
-  init-page works!
-</p>
+<div
+  (click)="exitInitPageHandler()"
+  [class]="backgroundOnInit">
+</div>
+<div class="bcg-container">
+  <div class="bcg01"></div>
+  <div class="bcg02"></div>
+</div>
+<div class="logo-container">
+  <img class="logo" alt="ariadna" src="../../../assets/img/logo.png">
+  <div [class]="logoTextFirst" >ariadna solution</div>
+  <div [class]="logoTextSecond" >be where you want to be</div>
+  <div [class]="logoTextThird" >click enywhere</div>
+</div>
