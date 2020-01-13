@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import {HomePageComponent} from '../home-page/home-page.component';
 
 @Component({
   selector: 'app-init-page',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./init-page.component.scss']
 })
 export class InitPageComponent implements OnInit {
+
+  constructor(private router: Router ) {
+  }
 
   backgroundOnInit = 'init-bcg-on';
   logoTextFirst = 'logo__text-first-init';
@@ -25,6 +30,9 @@ export class InitPageComponent implements OnInit {
     setTimeout(() => {
       this.backgroundOnInit = 'init-bcg-out';
     }, 1000);
+    setTimeout(() => {
+    this.router.navigate(['/', 'home']);
+    }, 4000);
   }
 
 }
