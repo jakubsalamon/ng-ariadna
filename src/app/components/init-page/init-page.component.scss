@@ -39,10 +39,12 @@
   grid-column: 2/3;
 
 }
+$gucio: 5vw;
+$maja: 120px;
 
 .logo-container {
   position: absolute;
-  left: 120px;
+  left: 130px;
   top: 140px;
   text-transform: uppercase;
 }
@@ -58,7 +60,7 @@
   font-size: 36px;
   letter-spacing: 2px;
   margin-top: 10px;
-  transition: 9s;
+  transition: 5s;
 }
 .logo__text-sec-init {
   font-size: 20px;
@@ -69,7 +71,7 @@
   font-size: 20px;
   letter-spacing: 2px;
   margin-top: 2px;
-  transition: 9s;
+  transition: 5s;
 }
 .logo__text-third {
   margin-top: 15px;
