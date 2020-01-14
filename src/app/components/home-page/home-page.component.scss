@@ -1,3 +1,15 @@
-p {
-   color: white;
+.bcg-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.bcg01 {
+  background-image: url("../../../assets/img/jsimg.png");
+  background-position: center;
+  background-size: cover;
+}
+.bcg02 {
+  background-image: url("../../../assets/img/roadforest.jpg");
+  background-size: 200%;
+  background-position: top;
 }

@@ -39,12 +39,10 @@
   grid-column: 2/3;
 
 }
-$gucio: 5vw;
-$maja: 120px;
 
 .logo-container {
   position: absolute;
-  left: 130px;
+  left: calc(20px + 7vw);
   top: 140px;
   text-transform: uppercase;
 }
@@ -81,4 +79,12 @@ $maja: 120px;
   margin-top: 15px;
   color: transparent;
   transition: 4s;
+}
+.logo__span-red {
+  color: black;
+
+}
+.logo__span-red-on {
+  color: red;
+  transition: 10s;
 }

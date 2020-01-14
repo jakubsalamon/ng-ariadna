@@ -16,12 +16,14 @@ export class InitPageComponent implements OnInit {
   logoTextFirst = 'logo__text-first-init';
   logoTextSecond = 'logo__text-sec-init';
   logoTextThird = 'logo__text-third-init';
+  logoSpanColor = 'logo__span-red';
 
   ngOnInit(): void {
     setTimeout(() => {
       this.backgroundOnInit = 'init-bcg-off';
       this.logoTextFirst = 'logo__text-first';
       this.logoTextSecond = 'logo__text-sec';
+      this.logoSpanColor = 'logo__span-red-on';
     }, 400);
     setTimeout(() => this.logoTextThird = 'logo__text-third', 3000);
   }
