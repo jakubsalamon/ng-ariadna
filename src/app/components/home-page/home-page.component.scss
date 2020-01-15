@@ -1,15 +1,24 @@
 .bcg-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 .bcg01 {
-  background-image: url("../../../assets/img/jsimg.png");
+  background-image: url("../../../assets/img/kuba05.jpg");
   background-position: center;
   background-size: cover;
 }
 .bcg02 {
-  background-image: url("../../../assets/img/roadforest.jpg");
-  background-size: 200%;
-  background-position: top;
+  background-image: url("../../../assets/img/cutforest03.jpg");
+  background-size: cover;
+  background-position: right;
+
+  display: grid;
+  grid-template-columns: 1fr 400px 100px;
+
 }
+.menu__container {
+  grid-column: 2/3;
+}
+
+
