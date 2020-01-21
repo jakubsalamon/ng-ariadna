@@ -1,7 +1,7 @@
 .bcg-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
 }
 .bcg01 {
   background-image: url("../../../assets/img/kuba05.jpg");
@@ -9,16 +9,79 @@
   background-size: cover;
 }
 .bcg02 {
-  background-image: url("../../../assets/img/cutforest03.jpg");
+  background-image: url("../../../assets/img/cutforest04.jpg");
   background-size: cover;
   background-position: right;
 
   display: grid;
-  grid-template-columns: 1fr 400px 100px;
+  grid-template-columns: 1fr 600px 100px;
+  grid-template-rows: 3fr 2fr;
 
 }
 .menu__container {
   grid-column: 2/3;
+  display: grid;
+  grid-template-rows: auto 50px 50px 50px;
+  text-transform: uppercase;
 }
+
+.menu__title {
+  font-size:74px;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 14px;
+  margin-right: -14px;
+  display: grid;
+  align-items: center;
+}
+
+.menu__home {
+  font-size: 28px;
+  text-align: right;
+  letter-spacing: 4px;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+  }
+  :hover {
+    color: darkred;
+    transition: 1s;
+  }
+}
+.menu__about {
+  font-size: 28px;
+  text-align: right;
+  letter-spacing: 4px;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+  }
+  :hover {
+    color: darkred;
+    transition: 1s;
+  }
+}
+.menu__projects {
+  font-size: 28px;
+  text-align: right;
+  letter-spacing: 4px;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+  }
+  :hover {
+    color: darkred;
+    transition: 1s;
+  }
+}
+.thered {
+  color: darkred;
+  display: inline-block;
+}
+
+
 
 
