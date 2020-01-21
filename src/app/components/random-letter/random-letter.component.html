@@ -1,6 +1,8 @@
 <div class="random-letter__container">
   <span
     *ngFor="let letter of textArray, let i = index">
-    <span [className]="gucio(i)">{{letter}}</span>
+    <span
+      [ngClass]="(i === randomNumber) ? 'random-letter__span-red' : 'random-letter__span-black'"
+    >{{letter}}</span>
   </span>
 </div>
