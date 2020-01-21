@@ -1,3 +1,6 @@
-<p>
-  random-letter works!
-</p>
+<div class="random-letter__container">
+  <span
+    *ngFor="let letter of textArray, let i = index">
+    <span [className]="gucio(i)">{{letter}}</span>
+  </span>
+</div>
