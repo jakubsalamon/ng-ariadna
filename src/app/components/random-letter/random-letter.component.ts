@@ -13,8 +13,10 @@ arrayLength: number = this.textArray.length;
 randomNumber = 4;
 
 ngAfterViewChecked(): void {
-  console.log('kupa');
-  console.log(this.randomNumber);
+
+}
+spaceFinder() {
+  return this.textArray.map((el, index) => el === ' ' ? index : '' ).filter(Number);
 }
 
 madeRandomNumber(min = 0, max: number) {
@@ -24,10 +26,13 @@ madeRandomNumber(min = 0, max: number) {
 }
 
 pickNewRedLetter() {
+  let spacePositions = this.spaceFinder();
   let newRandomNumber = this.madeRandomNumber(0, this.arrayLength);
+
   while (newRandomNumber === this.randomNumber) {
     newRandomNumber = this.madeRandomNumber(0, this.arrayLength);
   }
+  console.log(newRandomNumber)
   this.randomNumber = newRandomNumber;
 }
 
@@ -35,6 +40,7 @@ pickNewRedLetter() {
   }
 
   ngOnInit() {
+    this.spaceFinder();
     setInterval(() => this.pickNewRedLetter(), 6000);
   }
 
