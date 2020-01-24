@@ -7,7 +7,7 @@ import {Component, Input, OnInit, AfterViewChecked} from '@angular/core';
 })
 export class RandomLetterComponent implements OnInit, AfterViewChecked {
 
-text = 'jakub salamon';
+text = 'jakub salaamon';
 textArray: string[] = this.text.split('');
 arrayLength: number = this.textArray.length;
 randomNumber = 4;
