@@ -1,21 +1,23 @@
-import {Component, Input, OnInit, AfterViewChecked} from '@angular/core';
+import {Component, OnInit, Input, AfterViewInit} from '@angular/core';
+import {DataService} from '../../services/data.service';
+import {text} from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-random-letter',
   templateUrl: './random-letter.component.html',
-  styleUrls: ['./random-letter.component.scss']
+  styleUrls: ['./random-letter.component.scss'],
+  providers: [DataService]
 })
-export class RandomLetterComponent implements OnInit, AfterViewChecked {
+export class RandomLetterComponent implements OnInit {
+  @Input() gucio = '';
 
-text = 'jakub salamon';
-textArray: string[] = this.text.split('');
-arrayLength: number = this.textArray.length;
+textArray: string[];
+arrayLength: number;
 randomNumber = 4;
 
-ngAfterViewChecked(): void {
 
-}
 spaceFinder() {
+  console.log(this.textArray);
   return this.textArray.map((el, index) => el === ' ' ? index : '' ).filter(Number);
 }
 
@@ -57,9 +59,13 @@ pickNewRedLetter() {
 }
 
   constructor() {
+
   }
 
   ngOnInit() {
+    this.textArray = this.gucio.split('');
+    this.arrayLength = this.textArray.length;
+    console.log(this.textArray);
     this.spaceFinder();
     setInterval(() => this.pickNewRedLetter(), 6000);
   }
